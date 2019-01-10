@@ -1,0 +1,24 @@
+{
+  "name": "addon-hello-world",
+  "version": "0.0.1",
+  "description": "node addon hello world example",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrism00ch/node-addon-hello-world.git"
+  },
+  "keywords": [
+    "tutorial",
+    "example",
+    "addon"
+  ],
+  "author": "Chris Mucciolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrism00ch/node-addon-hello-world/issues"
+  },
+  "homepage": "https://github.com/chrism00ch/node-addon-hello-world#readme"
+}

@@ -2,6 +2,7 @@
   "name": "addon-hello-world",
   "version": "0.0.1",
   "description": "node addon hello world example",
+  "gypfile": true,
   "main": "main.js",
   "scripts": {
     "test": "npm test"
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chrism00ch/node-addon-hello-world/issues"
   },
-  "homepage": "https://github.com/chrism00ch/node-addon-hello-world#readme"
+  "homepage": "https://github.com/chrism00ch/node-addon-hello-world#readme",
+  "dependencies": {
+    "node-addon-api": "^1.6.2"
+  }
 }

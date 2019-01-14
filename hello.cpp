@@ -1,9 +1,12 @@
 #include <napi.h>
-using namespace Napi;
-String Hello(const CallbackInfo& info) {
-	return String::New(info.Env(), "world");
+
+Napi::String Hello(const Napi::CallbackInfo& info) {
+	Napi::Env env = info.Env();
+	return Napi::String::New(env, "world");
 }
-void Init(Env env, Object exports, Object module) {
-	exports.Set("hello", Function::New(env, Hello));
+Napi::Object Init(Napi::Env env, Napi::Object exports) {
+	exports.Set(Napi::String::New(env, "hello"),
+				Napi::Function::New(env, Hello));
+	return exports;
 }
-NODE_API_MODULE(addon, Init)
+NODE_API_MODULE(hello, Init)

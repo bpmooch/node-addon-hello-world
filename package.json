@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "node addon hello world example",
   "gypfile": true,
-  "main": "main.js",
+  "main": "hello.js",
   "scripts": {
     "test": "npm test"
   },
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/chrism00ch/node-addon-hello-world#readme",
   "dependencies": {
+    "bindings": "^1.3.1",
     "node-addon-api": "^1.6.2"
   }
 }

@@ -7,7 +7,7 @@ This project can run without any changes (aside from ensuring Python 2.7 is inst
 3. `npm install node-addon-api --save` && `npm install bindings --save`
 4. If using Visual Studio to write the addon, prefer using the [Open Folder](https://docs.microsoft.com/en-us/cpp/ide/non-msbuild-projects?view=vs-2017) feature to avoid creating solution and project files
 ## C++ Addons vs N-API vs node-addon-api
-C/C++ interoperability with Node is constantly changing, so it's worth laying out the different strategies for calling C code from Node. On paper at least, N-API will be the go-to strategy moving forward, but who knows.
+C/C++ interoperability with Node is constantly changing, so it's worth laying out the different strategies for calling C code from Node.
 ### [C++ Addons](https://nodejs.org/api/addons.html)
 Node C++ Addons are dynamically linked shared objects that integrate with the v8 runtime directly, as well as several other node specific API's. As referenced in the introduction to the documentation, the immediate downside of C++ Addons is the amount of knowledge required to write them. In addition, because Node does not control the v8 runtime, the v8 team can make breaking changes to the API with no regard for Node users. It's worth noting, however, that none of the interop strategies seem particular resistant to API churn at the time of this writing.
 ### [Native Abstractions for Node.js (nan)](https://github.com/nodejs/nan)

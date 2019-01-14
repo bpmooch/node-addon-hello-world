@@ -1,5 +1,5 @@
-# Node Addon Hello World example repository
-Node Addon Hello World example repository using node-addon-api, a C++ wrapper for N-API
+# Calling C from Node
+Node Addon hello world example project using node-addon-api, a C++ wrapper for N-API
 ## Steps taken to reproduce this project
 This project can run without any changes (aside from ensuring Python 2.7 is installed), but the project can be recreated using the following steps. The source code was pulled from the example section of the [node-addon-api](https://github.com/nodejs/node-addon-api) readme.
 1. Install [Python 2.7](https://www.python.org/downloads/release/python-2713/)
